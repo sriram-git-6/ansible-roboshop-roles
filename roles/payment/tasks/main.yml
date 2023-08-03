@@ -1,0 +1,4 @@
+- name: python setup
+  ansible.builtin.import_roles:
+    name: common
+    tasks_from: payment-python.yml
