@@ -10,7 +10,7 @@
   ansible.builtin.yum:
     name: mysql-community-server
     state: installed
-    enabled: yes
+    update_cache: yes
 
 - name: restart mysql service
   ansible.builtin.systemd:
